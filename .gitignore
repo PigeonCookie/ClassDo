@@ -1,0 +1,27 @@
+# ---- Android / Gradle 构建产物 ----
+*.iml
+.gradle/
+build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+release/
+
+# ---- 签名相关：绝对不能进仓库 ----
+keystore.properties
+*.jks
+*.keystore
+
+# ---- IDE ----
+.idea/
+*.hprof
+.DS_Store
+
+# ---- 开发时的中间产物/临时文件 ----
+*.apk
+*.aab
+*.log
+
+# ---- 开发过程截图（仓库里只保留 docs/images 下挑出来的那几张）----
+screenshots/

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ClassDo</string>
+    <string name="channel_name">ClassDo 提醒</string>
+    <string name="channel_desc">在作业汇报/提交时间到来前提醒你</string>
+</resources>

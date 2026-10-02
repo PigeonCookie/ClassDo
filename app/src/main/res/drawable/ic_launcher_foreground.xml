@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  作业本图标：白色本子 + 琥珀色书脊 + 三条横线，带一点投影让它浮起来。
+  所有元素都在以 (54,54) 为心、半径 33 的安全圆内，圆形/方圆遮罩都不会被切。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 整体放大一点，留白不至于太多；放大后仍在遮罩可见范围内 -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="1.08"
+        android:scaleY="1.08">
+
+    <!-- 投影 -->
+    <group android:translateY="2.2">
+        <path
+            android:pathData="M39,30 L69,30 A5,5 0 0 1 74,35 L74,73 A5,5 0 0 1 69,78 L39,78 A5,5 0 0 1 34,73 L34,35 A5,5 0 0 1 39,30 Z"
+            android:fillColor="#47100934" />
+    </group>
+
+    <!-- 本子内页 -->
+    <path
+        android:pathData="M39,30 L69,30 A5,5 0 0 1 74,35 L74,73 A5,5 0 0 1 69,78 L39,78 A5,5 0 0 1 34,73 L34,35 A5,5 0 0 1 39,30 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="34"
+                android:startY="30"
+                android:endX="70"
+                android:endY="78">
+                <item android:offset="0" android:color="#FFFFFFFF" />
+                <item android:offset="1" android:color="#FFE7EEFB" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 书脊：只圆左边两个角 -->
+    <path android:pathData="M42,30 L39,30 A5,5 0 0 0 34,35 L34,73 A5,5 0 0 0 39,78 L42,78 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="34"
+                android:startY="30"
+                android:endX="34"
+                android:endY="78">
+                <item android:offset="0" android:color="#FFFFC85C" />
+                <item android:offset="1" android:color="#FFFF9B1A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 三条横线 -->
+    <path
+        android:pathData="M48,42 L68,42"
+        android:strokeColor="#FFB7C3DC"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M48,50.5 L68,50.5"
+        android:strokeColor="#FFB7C3DC"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M48,59 L62,59"
+        android:strokeColor="#FFB7C3DC"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round" />
+
+    </group>
+</vector>
